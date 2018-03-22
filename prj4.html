@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript"> 
+function validateFrm()
+{
+	var x = document.forms["frm"]["rq"].value;
+if (x == null || x =="")
+{
+		alert("email incomplete");  
+		return false;   
+      } 
+    }  
+</script>
+</head>
+<body>
+<form method="post" name="frm" action="google.com">
+email:
+<input type="email" placeholder="email" name="rq">
+password:
+<input type="password" placeholder="password">
+<input type="button" onclick="return validateFrm()" value="submit">
+</form>
+</body>
+</html>
